@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<form action="{% url 'files' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.files}}
+    <input type="submit" name="" id="">
+</form>
+{% endblock %}

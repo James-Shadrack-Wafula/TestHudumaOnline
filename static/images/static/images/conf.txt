@@ -1,0 +1,10 @@
+make
+sudo make install
+
+
+sudo ip link set wlx90de805b4578 down
+sudo iw wlx90de805b4578 set monitor none
+sudo ip link set wlx90de805b4578 up
+
+```
+
