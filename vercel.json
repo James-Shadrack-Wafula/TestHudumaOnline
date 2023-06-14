@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "HudumaOnline/wsgi.py",
+        "use": "@vercel/python",
+        "config": {"maxLambdaSize": "15mb", "runtime": "python3.9"}
+    }],
+    "routs": [
+        {
+            "src": "/(.*)",
+            "dest": "HudumaOnline/wsgi.py"
+        }
+    ]
+}

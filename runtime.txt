@@ -1,0 +1,1 @@
+web gunicorn HudumaOnline.wsgi:apllication --log-file -
